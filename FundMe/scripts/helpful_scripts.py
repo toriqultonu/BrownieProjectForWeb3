@@ -1,4 +1,5 @@
-from brownie import accounts, config, SimpleStorage2, network
+from brownie import accounts, config, FundMe, network
+
 
 def getAccount():
 
