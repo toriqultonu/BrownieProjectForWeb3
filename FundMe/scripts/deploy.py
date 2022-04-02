@@ -6,7 +6,7 @@ from scripts.helpful_scripts import getAccount
 def deploy_fund_me():
 
     account = getAccount()
-    fund_me = FundMe.deploy({"from": account})
+    fund_me = FundMe.deploy({"from": account}, publish_source=True)
     print(f"Contract deployed to {fund_me.address}")
 
 
