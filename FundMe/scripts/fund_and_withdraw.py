@@ -5,7 +5,9 @@ from scripts.helpful_scripts import getAccount
 def fund():
     fund_me = FundMe[-1]
     account = getAccount()
+    print(fund_me)
     entrance_fee = fund_me.getEntranceFee()
+    # entrance_fee = 25000000000000000
     print(entrance_fee)
     print(f"The current entry {entrance_fee}")
     print("Funding")
@@ -20,4 +22,6 @@ def withdraw():
 
 def main():
     fund()
-    withdraw()
+
+
+# withdraw()
